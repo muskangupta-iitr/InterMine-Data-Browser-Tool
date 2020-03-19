@@ -663,6 +663,7 @@ function addCustomFilters() {
 
                     $("#interactionsParticipant2SearchInput").autocomplete({
                         minLength: 3,
+                        autoFocus: true,
                         source: function(request, response) {
                             var results = $.ui.autocomplete.filter(availableParticipant2Symbol, request.term);
                             response(results.slice(0, 15));
@@ -752,6 +753,7 @@ function addCustomFilters() {
 
                     $("#diseasesSearchInput").autocomplete({
                         minLength: 3,
+                        autoFocus: true,
                         source: function(request, response) {
                             var results = $.ui.autocomplete.filter(availableDiseasesNames, request.term);
                             response(results.slice(0, 15));
@@ -808,6 +810,7 @@ function addCustomFilters() {
 
                     $("#clinvarClinicalSignificanceSearchInput").autocomplete({
                         minLength: 2,
+                        autoFocus: true,
                         source: function(request, response) {
                             var results = $.ui.autocomplete.filter(availableData, request.term);
                             response(results.slice(0, 15));
@@ -839,6 +842,7 @@ function addCustomFilters() {
 
                     $("#clinvarTypeSearchInput").autocomplete({
                         minLength: 2,
+                        autoFocus: true,
                         source: function(request, response) {
                             var results = $.ui.autocomplete.filter(availableData, request.term);
                             response(results.slice(0, 15));
@@ -932,6 +936,7 @@ function addCustomFilters() {
 
                     $("#proteinLocalisationCellTypeSearchInput").autocomplete({
                         minLength: 2,
+                        autoFocus: true,
                         source: function(request, response) {
                             var results = $.ui.autocomplete.filter(availableData, request.term);
                             response(results.slice(0, 15));
@@ -963,6 +968,7 @@ function addCustomFilters() {
 
                     $("#proteinLocalisationTissueSearchInput").autocomplete({
                         minLength: 2,
+                        autoFocus: true,
                         source: function(request, response) {
                             var results = $.ui.autocomplete.filter(availableData, request.term);
                             response(results.slice(0, 15));
@@ -1068,6 +1074,7 @@ function addCustomFilters() {
 
                     $("#proteinDomainNameSearchInput").autocomplete({
                         minLength: 3,
+                        autoFocus: true,
                         source: function(request, response) {
                             var results = $.ui.autocomplete.filter(availableProteinDomainNames, request.term);
                             response(results.slice(0, 15));
@@ -1126,6 +1133,7 @@ function addCustomFilters() {
                 
                            $("#phenotypeNameSearchInput").autocomplete({
                                minLength: 3,
+                               autoFocus: true,
                                source: function(request, response) {
                                    var results = $.ui.autocomplete.filter(availablePhenotypeNames, request.term);
                                    response(results.slice(0, 15));
@@ -1438,6 +1446,7 @@ function createGoAnnotationFilter() {
 
             $("#goAnnotationSearchInput").autocomplete({
                 minLength: 3,
+                autoFocus: true,
                 source: function(request, response) {
                     var results = $.ui.autocomplete.filter(availableGoTerms, request.term);
                     response(results.slice(0, 15));
@@ -1562,6 +1571,7 @@ function createPathwaysNameFilter() {
 
             $("#pathwayNameSearchInput").autocomplete({
                 minLength: 3,
+                autoFocus: true,
                 source: function(request, response) {
                     var results = $.ui.autocomplete.filter(availablePathwayNames, request.term);
                     response(results.slice(0, 15));
