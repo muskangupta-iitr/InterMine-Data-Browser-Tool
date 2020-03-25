@@ -1,4 +1,11 @@
+.gitignore
+.editorconfig
+.eslintignore
+.prettierignore
 node_modules/
 public/
 docs/
 **/*.pug
+src/img/
+Procfile
+LICENSE

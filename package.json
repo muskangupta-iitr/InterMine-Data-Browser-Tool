@@ -11,9 +11,9 @@
   "scripts": {
     "start": "gulp & node ./bin/www",
     "dev": "gulp dev",
-    "lint": "eslint --quiet **/**/*.{js,css,scss,pug}",
+    "lint": "eslint .",
     "lint:fix": "eslint --fix .",
-    "prettify": "prettier --write **/**/*.{js,css,scss,pug}",
+    "prettify": "prettier --write '**'",
     "test": "mocha --timeout 100000"
   },
   "author": "Adrian Rodriguez-Bazaga",
